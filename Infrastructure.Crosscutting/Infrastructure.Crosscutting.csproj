@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>NLayerApp.Infrastructure.Crosscutting</AssemblyName>
+    <RootNamespace>NLayerApp.Infrastructure.Crosscutting</RootNamespace>
+  </PropertyGroup>
+
+</Project>

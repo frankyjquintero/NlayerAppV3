@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>NLayerApp.Application.BlogBoundedContext</AssemblyName>
+    <RootNamespace>NLayerApp.Application.BlogBoundedContext</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Application.BlogBoundedContext.DTO\Application.BlogBoundedContext.DTO.csproj" />
+    <ProjectReference Include="..\Application.Seedwork\Application.Seedwork.csproj" />
+    <ProjectReference Include="..\Domain.BlogBoundedContext\Domain.BlogBoundedContext.csproj" />
+  </ItemGroup>
+
+</Project>

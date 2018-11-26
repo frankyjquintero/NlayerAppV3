@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>NLayerApp.DistributedServices.BlogBoundedContext</AssemblyName>
+    <RootNamespace>NLayerApp.DistributedServices.BlogBoundedContext</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netcoreapp2.1\NLayerApp.DistributedServices.BlogBoundedContext.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netcoreapp2.1\NLayerApp.DistributedServices.BlogBoundedContext.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="7.6.104" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.1.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Application.BlogBoundedContext.DTO\Application.BlogBoundedContext.DTO.csproj" />
+    <ProjectReference Include="..\Application.BlogBoundedContext\Application.BlogBoundedContext.csproj" />
+    <ProjectReference Include="..\DistributedServices.Seedwork\DistributedServices.Seedwork.csproj" />
+    <ProjectReference Include="..\Domain.BlogBoundedContext\Domain.BlogBoundedContext.csproj" />
+    <ProjectReference Include="..\Infrastructure.Crosscutting.NetFramework\Infrastructure.Crosscutting.NetFramework.csproj" />
+    <ProjectReference Include="..\Infrastructure.Data.BlogBoundedContext\Infrastructure.Data.BlogBoundedContext.csproj" />
+  </ItemGroup>
+
+</Project>
